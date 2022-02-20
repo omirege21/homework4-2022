@@ -4,34 +4,79 @@ body{
     background-image: url(../images/concrete_seamless.png);
   }
 
-  header{
-    display: flex;
+header{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav_links {
+  display: flex;
+}
+
+.nav_item a:visited {
+  color: #0000EE;
+}
+
+.card > header {
+  background: #288088;
+  border: solid 2px #45ADAD;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px 50px 0px 0px; 
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: 450px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img{
+  border: solid 10px #50C7c7;
+  margin: 10px;
+  width: 300px;
+}
+
+#logo {
+  animation: mymove 5s;
+}
+
+@keyframes mymove {
+  from {width: 25px; opacity: 0;}
+  to {width: 475px; opacity: 1;}
+}
+
+@media only screen and (min-width: 900px) {
+
+  body > header {
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    height: 78px;
   }
 
-  .nav_links {
-    display: flex;
-  }
-
- .nav_item a:visited {
-    color: #0000EE;
-  }
-
-  .card > header {
-    background: #288088;
-    border: solid 2px #45ADAD;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 50px 50px 0px 0px; 
-  }
-
-  .pricing {
+  #logo{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
   }
 
-  .card {
-    flex: initial;
-    flex: 450px;
+  .card{
+    flex-basis: 250px;
   }
 
-  
+}
