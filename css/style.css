@@ -80,3 +80,51 @@ header{
   }
 
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #logo {
+      animation: none;
+  }
+}
+
+@media print {
+  body{        
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: none;
+  }
+
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pricing{
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+
+  .card{
+    border: solid 2px #45ADDD;
+    flex-basis: 325px;
+  }
+
+  .gallery , #gallery {
+    display: none;
+  }
+
+  #logo{
+    justify-content: center;
+    animation: none;
+  }
+
+
+Edit the nav/nav_links elements so that they are spaced according to the image below.
+
+
+
+
+
+
+
+Without using list-style-type add the thumbs up entity as shown in the cards.  This is a challenge problem. You should not give or receive help when completing it.**For some people the thumbs up is not printing as yellow.  That is fine.
+}
