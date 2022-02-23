@@ -7,10 +7,13 @@ body{
 header{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav_links {
   display: flex;
+  flex-direction: column;
 }
 
 .nav_item a:visited {
@@ -69,6 +72,10 @@ header{
     height: 78px;
   }
 
+  .nav_links {
+    flex-direction: row;
+  }
+  
   #logo{
     display: flex;
     flex-direction: row;
