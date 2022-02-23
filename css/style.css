@@ -6,9 +6,9 @@ body{
 
 header{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 .nav_links {
@@ -86,6 +86,10 @@ header{
     flex-basis: 250px;
   }
 
+  header {
+    flex-direction: row;
+  }
+
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -103,6 +107,7 @@ header{
   .nav_links{
     flex-direction: row;
     justify-content: space-between;
+    column-gap: 160px;
   }
 
   .pricing{
@@ -112,6 +117,7 @@ header{
 
   .card{
     border: solid 2px #45ADDD;
+    border-radius: 50px 50px 0px 0px; 
     flex-basis: 325px;
   }
 
@@ -124,14 +130,15 @@ header{
     animation: none;
   }
 
+  div.card  ul  li:nth-child(2n)::after {
+    content: " 👍";
+  }
 
-Edit the nav/nav_links elements so that they are spaced according to the image below.
-
-
-
-
-
-
-
-Without using list-style-type add the thumbs up entity as shown in the cards.  This is a challenge problem. You should not give or receive help when completing it.**For some people the thumbs up is not printing as yellow.  That is fine.
 }
+
+
+
+
+
+
+
